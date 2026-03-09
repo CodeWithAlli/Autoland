@@ -1,0 +1,10 @@
+# Archivos sensibles - NO subir
+config/conexion.php
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+
+# Editores
+.vscode/
+*.swp
