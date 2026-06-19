@@ -1,0 +1,89 @@
+/* ============================================================
+   AUTOLAND — Pantalla de login
+   ============================================================ */
+
+.pantalla-login {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg);
+  background-image:
+    radial-gradient(circle at 15% 20%, rgba(181, 101, 29, 0.06) 0%, transparent 45%),
+    radial-gradient(circle at 85% 80%, rgba(21, 32, 43, 0.05) 0%, transparent 45%);
+  padding: 24px;
+}
+
+.login-card {
+  width: 100%;
+  max-width: 400px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radio-l);
+  box-shadow: var(--sombra-m);
+  padding: 36px 36px 28px;
+}
+
+.login-marca {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 28px;
+}
+
+.login-marca-icono {
+  width: 38px;
+  height: 38px;
+  border-radius: 9px;
+  background: var(--acento);
+  color: #fff;
+  font-weight: 800;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.login-marca-texto {
+  font-size: 16px;
+  font-weight: 800;
+  letter-spacing: 0.3px;
+  color: var(--texto);
+}
+
+.login-marca-sub {
+  font-size: 11.5px;
+  color: var(--texto-tenue);
+}
+
+.login-encabezado { margin-bottom: 24px; }
+.login-encabezado h1 {
+  font-size: 21px;
+  font-weight: 800;
+  margin: 0 0 6px;
+  color: var(--texto);
+}
+.login-encabezado p {
+  font-size: 13.5px;
+  color: var(--texto-suave);
+  margin: 0;
+  line-height: 1.5;
+}
+
+.login-btn {
+  width: 100%;
+  padding: 12px;
+  font-size: 14px;
+  margin-top: 6px;
+}
+
+.login-pie {
+  margin-top: 24px;
+  padding-top: 18px;
+  border-top: 1px solid var(--border);
+  font-size: 12px;
+  color: var(--texto-tenue);
+  text-align: center;
+  line-height: 1.5;
+}

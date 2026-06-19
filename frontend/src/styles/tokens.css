@@ -1,0 +1,100 @@
+/* ============================================================
+   AUTOLAND — Sistema de diseño
+   Panel administrativo real: claro, denso, sin dramatismo.
+   Paleta: grafito + acento cobre (identidad automotriz sobria)
+   ============================================================ */
+
+:root {
+  /* Superficie */
+  --bg:        #f5f6f8;
+  --bg-card:   #ffffff;
+  --bg-sidebar:#15202b;
+  --bg-hover:  #eef1f5;
+
+  /* Bordes */
+  --border:      #e2e5ea;
+  --border-fuerte: #c7ccd4;
+
+  /* Texto */
+  --texto:        #1c2430;
+  --texto-suave:  #5b6472;
+  --texto-tenue:  #9aa1ac;
+  --texto-sidebar:#aeb8c4;
+  --texto-sidebar-activo: #ffffff;
+
+  /* Acento de marca: cobre/ámbar — metal, no "alerta" */
+  --acento:       #b5651d;
+  --acento-suave: #fdf1e6;
+  --acento-borde: #e8b685;
+
+  /* Estados semánticos */
+  --exito:        #1d7a4c;
+  --exito-suave:  #e7f6ee;
+  --alerta:       #b3501c;
+  --alerta-suave: #fdf0e6;
+  --peligro:      #c0392b;
+  --peligro-suave:#fbeae8;
+
+  /* Tipografía */
+  --fuente: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --fuente-mono: 'JetBrains Mono', 'SF Mono', Consolas, monospace;
+
+  /* Radios y sombras */
+  --radio-s: 6px;
+  --radio-m: 10px;
+  --radio-l: 14px;
+  --sombra-s: 0 1px 2px rgba(20, 25, 35, 0.06);
+  --sombra-m: 0 4px 12px rgba(20, 25, 35, 0.08);
+  --sombra-l: 0 12px 32px rgba(20, 25, 35, 0.14);
+}
+
+* , *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--fuente);
+  background: var(--bg);
+  color: var(--texto);
+  -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+a { color: inherit; }
+
+button {
+  font-family: var(--fuente);
+}
+
+input, select, textarea {
+  font-family: var(--fuente);
+}
+
+::selection {
+  background: var(--acento-suave);
+  color: var(--acento);
+}
+
+/* Scrollbar discreto */
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb {
+  background: var(--border-fuerte);
+  border-radius: 8px;
+}
+::-webkit-scrollbar-thumb:hover { background: var(--texto-tenue); }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
